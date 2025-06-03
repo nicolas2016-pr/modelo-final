@@ -7,10 +7,6 @@ class MaterialReciclado(ABC):
         self.peso = peso
         self.fecha = fecha
 
-    @abstractmethod
-    def calcular_puntos(self):
-        pass
-
 class Plastico(MaterialReciclado):
     def calcular_puntos(self):
         return self.peso * 2
